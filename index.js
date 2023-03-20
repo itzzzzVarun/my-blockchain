@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path')
 const bodyParser = require('body-parser')
 const Blockchain =  require('./blockchain');
 const request = require('request');
@@ -7,16 +8,29 @@ const blockchain = new Blockchain()
 const PubSub = require('./publishsubscribe');
 
 const app = express();
+
+
 const pubsub = new  PubSub({blockchain})
+
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
+
+app.use(express.static(path.join(__dirname, "public")));
 const DEFAULT_PORT = 3000;
 const ROOT_NODE_ADDRESS = `http://localhost:${DEFAULT_PORT}`;
 setTimeout(() => pubsub.broadcastChain(), 1000)
+
+
 app.use(bodyParser.json())
 app.use(express.urlencoded({extended: true}));
 app.use(bodyParser.urlencoded({extended: true}));
 
 
-app.get('/api/blocks', (req, res)=> {
+app.get('/', (req,res)=> {
+    res.render("block")
+})
+app.get('/api/blocks', (req,res)=>{
     res.json(blockchain.chain)
 })
 
