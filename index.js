@@ -30,6 +30,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.get('/', (req,res)=> {
     res.render("block")
 })
+app.get('/about', (req,res)=>{
+    res.render("out")
+})
 app.get('/api/blocks', (req,res)=>{
     res.json(blockchain.chain)
 })

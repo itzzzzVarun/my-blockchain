@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+  margin: 0;
 
 padding: 0;
 
@@ -12,7 +12,7 @@ box-sizing: border-box;
 position: relative;
 
 width: 100%;
- height: 108vh;
+height: 108vh;
 
 overflow: hidden;
 
@@ -51,14 +51,82 @@ z-index: -1;
 
 }
 .button{
-    height: 50px;
-    width: 200px;
-    background-color: rgb(159, 227, 87);
-    font-weight: 600px;
+  height: 50px;
+  width: 200px;
+  background-color: rgb(159, 227, 87);
+  font-weight: 600px;
 }
 .navbar{
-    font-size: x-large;
-    height: 50px;
-    display: flex;
-    background-color:  rgb(159, 227, 87);
+  font-size: x-large;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  background-color:  rgb(159, 227, 87);
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:  rgb(159, 227, 87);
+  color: black;
+
+  font-weight: 600;
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-around;
+}
+
+.info{ text-overflow: 100%;
+  margin-top: 30px;
+  margin-bottom: auto;
+  color:rgb(159, 227, 87); 
+  font-size: x-large;
+  width: 100%;
+}
+.img{padding-left: 30px;
+
+}
+.abhiphoto{   
+  
+  border-radius:50%;
+  margin-bottom: auto;
+  color: rgb(159, 227, 87);
+}
+.para{ margin-left: 50px;
+  font-size: x-large;
+}
+.varunphoto{ 
+  border-radius:50%;    
+  margin-bottom: auto;
+  color: rgb(159, 227, 87);
+}
+.Arsalanphoto{    
+  border-radius:50%;
+  margin-bottom: auto;
+  color: rgb(159, 227, 87);
+}
+  
+.about-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.nav-items {
+  text-decoration: none;
+  margin-left: 600px;
+}
+
+.nav-items, a {
+  text-decoration: none;
+  margin: 10px;
+  color: black;
+}
+
+.info h2 {
+  text-align: center;
+} 
+
+.about-container img {
+  margin-left: 50px;
 }
