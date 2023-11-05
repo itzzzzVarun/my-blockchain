@@ -58,6 +58,6 @@
 
 <br />
 
-[twitter]: https://twitter.com/iamvarunking
-[instagram]: https://instagram.com/iamvarunking
-[linkedin]: https://linkedin.com/in/iamvarunking
+[twitter]: https://twitter.com/itzzzzVarun
+[instagram]: https://instagram.com/_____varunsingh
+[linkedin]: https://linkedin.com/in/itzzzzVarun
